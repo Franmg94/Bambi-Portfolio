@@ -2,6 +2,7 @@ import About from "./components/About";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <HeroSection />
       <About />
       <Projects />
+      <Skills />
     </main>
   );
 }
