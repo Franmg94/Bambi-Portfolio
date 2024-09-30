@@ -1,4 +1,5 @@
 import About from "./components/About";
+import AchievmentShowcase from "./components/AchievementShowcase";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
@@ -12,6 +13,7 @@ export default function App() {
       <About />
       <Projects />
       <Skills />
+      <AchievmentShowcase />
     </main>
   );
 }
