@@ -1,5 +1,6 @@
 import About from "./components/About";
 import AchievmentShowcase from "./components/AchievementShowcase";
+import ContactForm from "./components/ContactForm";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
@@ -16,6 +17,7 @@ export default function App() {
       <Skills />
       <AchievmentShowcase />
       <Testimonials />
+      <ContactForm />
     </main>
   );
 }
