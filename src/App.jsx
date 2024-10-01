@@ -1,6 +1,7 @@
 import About from "./components/About";
 import AchievmentShowcase from "./components/AchievementShowcase";
 import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
@@ -18,6 +19,7 @@ export default function App() {
       <AchievmentShowcase />
       <Testimonials />
       <ContactForm />
+      <Footer />
     </main>
   );
 }
