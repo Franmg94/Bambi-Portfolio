@@ -14,14 +14,14 @@ import { DiRedis } from "react-icons/di";
 import { FaNodeJs } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 
-import image1 from "../assets/project1.jpeg";
-import image2 from "../assets/project2.jpeg";
-import image3 from "../assets/project3.jpeg";
-import image4 from "../assets/project4.jpeg";
-import image5 from "../assets/project5.jpeg";
-import image6 from "../assets/project6.jpeg";
-import image7 from "../assets/project7.jpeg";
-import image8 from "../assets/project8.jpeg";
+import image1 from "../assets/project-pictures/project1.jpg";
+import image2 from "../assets/project-pictures/project2.jpg";
+import image3 from "../assets/project-pictures/project3.jpg";
+import image4 from "../assets/project-pictures/project4.jpg";
+import image5 from "../assets/project-pictures/project5.jpg";
+import image6 from "../assets/project-pictures/project6.png";
+import image7 from "../assets/project-pictures/project7.jpg";
+import image8 from "../assets/project-pictures/project8.jpg";
 
 import user1 from "../assets/profile-pictures/user1.jpg";
 import user2 from "../assets/profile-pictures/user2.jpg";
@@ -38,15 +38,21 @@ export const NAVIGATION_LINKS = [
 ];
 
 export const PROFILE = {
-  name: "Robert Butcher",
-  info: "Full-stack developer with a flair for graphic design.",
+  name: "Ceren Kalay",
+  info: "Event and Operation Manager / Community Builder / Program Curator ",
 };
+
+export const TAGS = [
+  "Event and Operation Manager",
+  "Community Builder",
+  "Program Curator",
+];
 
 export const ABOUT = {
   text1:
-    "I create dynamic, responsive websites that blend creativity with efficiency",
+    "I create events, responsive websites that blend creativity with efficiency",
   text2:
-    "Hello! I'm Robert Butcher, a full-stack developer with a flair for graphic design. I thrive on crafting web experiences that are not only visually stunning but also highly functional and user-friendly. My passion for detail ensures that every project is polished and professional. Beyond coding, I'm an avid explorer of new cultures and cuisines. My curiosity drives me to stay on the cutting edge of technology and design trends, bringing innovative and practical solutions to every challenge. Whether I'm developing a sleek website or diving into the latest tech, I am dedicated to delivering excellence in every project.",
+    "Hello! I'm Ceren Kallay, I'm an event producer and cultural curator based in Berlin, originally from Turkey. I graduated from the Department of European Union Studies at Istanbul Bilgi University and have over a decade of experience in the entertainment industry. I have  had the privilege of working as a coordinator and event manager for major events and film festivals, including the !f İstanbul Independent Film Festival and the Istanbul Film Festival.",
 };
 
 export const PROJECTS = [

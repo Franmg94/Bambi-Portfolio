@@ -10,13 +10,13 @@ import Testimonials from "./components/Testimonials";
 
 export default function App() {
   return (
-    <main className="overflow-x-hidden bg-gray-950 tracking-tighter text-gray-200 antialiased ">
+    <main className="overflow-x-hidden bg-fuchsia-800 tracking-tighter text-gray-200 antialiased ">
       <Navbar />
       <HeroSection />
       <About />
       <Projects />
-      <Skills />
-      <AchievmentShowcase />
+      {/* <Skills /> */}
+      {/* <AchievmentShowcase /> */}
       <Testimonials />
       <ContactForm />
       <Footer />

@@ -1,7 +1,8 @@
 import React from "react";
-import logo from "../assets/logo.png";
-import { NAVIGATION_LINKS } from "../constants";
-import { FaTimes, FaBars } from "react-icons/fa"; // Ensure you import these
+import logo from "../assets/bambi-logo-trans-2.png";
+import { NAVIGATION_LINKS, PROFILE } from "../constants";
+import { FaTimes, FaBars } from "react-icons/fa";
+// Ensure you import these
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
@@ -30,28 +31,27 @@ const Navbar = () => {
     <div>
       <nav className="fixed left-0 right-0 top-4 z-50">
         {/* Desktop Menu */}
-        <div className="mx-auto hidden max-w-2-xl items-center justify-center rounded-lg  py-3 backdrop-blur-lg lg:flex">
-          <div className="flex justify-between gap-6">
-            <div>
-              <a href="#">
-                <img src={logo} width={90} alt="logo" />
-              </a>
-              <div>
-                <ul className="flex items-center gap-4">
-                  {NAVIGATION_LINKS.map((link, index) => (
-                    <li key={index}>
-                      <a
-                        href={link.href}
-                        className="text-sm hover:text-yellow-400"
-                        onClick={(e) => handleLinkClick(e, link.href)}
-                      >
-                        {link.label}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+        <div className="mx-auto hidden max-w-2-xl  justify-around rounded-lg gap-6 py-3 backdrop-blur-lg lg:flex">
+          <a href="/">
+            <h2 className="font-bold space antialiased tracking-widest">
+              {PROFILE.name}
+            </h2>
+          </a>
+
+          <div>
+            <ul className="flex items-center gap-4">
+              {NAVIGATION_LINKS.map((link, index) => (
+                <li key={index}>
+                  <a
+                    href={link.href}
+                    className="text-sm hover:text-fuchsia-400"
+                    onClick={(e) => handleLinkClick(e, link.href)}
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 
