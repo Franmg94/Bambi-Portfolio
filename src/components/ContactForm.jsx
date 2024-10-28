@@ -72,16 +72,18 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="mx-auto max-w-3xl p-4" id="contact">
+    <div
+      // className=" p-5 bg-gradient-to-t from-transparent from-60% to-fuchsia-700 lg:from-30%"
+      id="contact"
+    >
       <Toaster />
-      <h2 className="my-8 text-center text-3xl font-semibold tracking-tighter">
-        Let's Connect
-      </h2>
+      <h2 className="heading-lg">Let's Connect</h2>
       <motion.form
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 1 }}
         onSubmit={handleSubmit}
+        className="mx-auto max-w-3xl p-4"
       >
         <div className="mb-4">
           <input
@@ -144,7 +146,7 @@ const ContactForm = () => {
 
         <button
           type="submit"
-          className={`mb-8 w-full rounded bg-yellow-400 px-4 py-2 text-sm font-semibold text-slate-950 hover:bg-yellow-500 ${
+          className={`mb-8 w-full rounded bg-fuchsia-400 px-4 py-2 text-sm font-semibold text-slate-950 hover:bg-yellow-500 ${
             isSending ? "cursor-not-allowed opacity-50" : ""
           }`}
           disabled={isSending}

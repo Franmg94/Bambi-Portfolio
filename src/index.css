@@ -4,6 +4,31 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: "Inter", sans-serif;
+/* Custom classes */
+.main-bg {
+  @apply overflow-x-hidden bg-black tracking-tighter text-gray-200 antialiased;
+}
+
+.heading-lg {
+  @apply mt-20  text-center  text-6xl font-semibold text-white relative z-10 font-flux;
+}
+
+/* Additional custom classes */
+.button-primary {
+  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded; /* Define a button style */
+}
+
+.card {
+  @apply bg-white shadow-lg rounded-lg p-6; /* Define a card style */
+}
+
+.text-highlight {
+  @apply text-yellow-300; /* Define a highlight style */
+}
+
+.underline {
+  @apply mb-10 h-1 w-56 bg-fuchsia-400;
+}
+.underline-2 {
+  @apply mb-10 h-3 w-12 bg-fuchsia-400;
 }

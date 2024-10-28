@@ -18,13 +18,11 @@ const itemVariants = {
 };
 const Testimonials = () => {
   return (
-    <div
-      id="testimonial"
-      className="container mx-auto mt-20 py-16 tracking-tighter"
+    <section
+      id="testimonials"
+      className=" w-full mt-20 py-16 tracking-tighter "
     >
-      <h2 className="mb-12 text-center text-4xl font-semibold">
-        What People Say
-      </h2>
+      <h2 className="heading-lg">What People Say</h2>
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -51,7 +49,7 @@ const Testimonials = () => {
           </motion.div>
         ))}
       </motion.div>
-    </div>
+    </section>
   );
 };
 

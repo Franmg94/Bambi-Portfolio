@@ -2,22 +2,24 @@ import About from "./components/About";
 import AchievmentShowcase from "./components/AchievementShowcase";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
-import HeroSection from "./components/HeroSection";
+import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Testimonials from "./components/Testimonials";
+import Trajectory from "./components/Trajectory";
 
 export default function App() {
   return (
-    <main className="overflow-x-hidden bg-fuchsia-800 tracking-tighter text-gray-200 antialiased ">
+    <main className="main-bg">
       <Navbar />
-      <HeroSection />
+      <Hero />
       <About />
+      <Trajectory />
       <Projects />
       {/* <Skills /> */}
       {/* <AchievmentShowcase /> */}
-      <Testimonials />
+      {/* <Testimonials /> */}
       <ContactForm />
       <Footer />
     </main>

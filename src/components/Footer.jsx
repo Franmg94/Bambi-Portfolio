@@ -1,18 +1,17 @@
 import { motion } from "framer-motion";
-import logo from "../assets/bambi-logo.png";
 import { SOCIAL_MEDIA_LINKS } from "../constants";
 
 const Footer = () => {
   return (
-    <div className="mb-8 mt-20">
+    <footer className="mb-8 mt-20">
       <div className="flex items-center justify-center">
         <motion.figure
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1.5, delay: 1 }}
         >
-          <img src={logo} alt="logo" width={200} className="mb-2" />
-          <div className="mb-10 h-3 w-12 bg-yellow-400"></div>
+          <h2>Ceren Kalay</h2>
+          <div className="underline-2"></div>
         </motion.figure>
       </div>
       <div className="flex items-center justify-center gap-8">
@@ -36,7 +35,7 @@ const Footer = () => {
       <p className="mt-8 text-center text-sm tracking-wide text-gray-400">
         &copy;compileTab. All rights reserved
       </p>
-    </div>
+    </footer>
   );
 };
 

@@ -20,6 +20,12 @@ const About = () => {
       >
         {ABOUT.text2}
       </motion.p>
+
+      <div className="flex justify-center mt-10">
+        <a href="../assets/CV-CEREN KALAY.pdf" download="CV-CEREN KALAY.pdf">
+          <button className="border border-black px-6 py-2">Download CV</button>
+        </a>
+      </div>
     </div>
   );
 };
