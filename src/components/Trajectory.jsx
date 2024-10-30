@@ -12,7 +12,7 @@ const Trajectory = () => {
           {WORKEXPERIENCE.map((work, index) => (
             <div
               key={index}
-              className="relative flex flex-col md:flex-row items-start text-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105"
+              className="relative flex flex-col md:flex-row items-start text-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:translate-x-10"
             >
               <div className="flex-1 p-4 text-center md:text-left">
                 <h3 className="text-4xl font-bold mb-2 text-fuchsia-500">

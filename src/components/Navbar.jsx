@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../assets/bambi-logo-trans-2.png";
 import { NAVIGATION_LINKS, PROFILE } from "../constants";
 import { FaTimes, FaBars } from "react-icons/fa";
 // Ensure you import these
@@ -58,11 +57,11 @@ const Navbar = () => {
         {/* Mobile Menu */}
         <div className="rounded-lg backdrop-blur-md lg:hidden">
           <div className="flex items-center justify-between">
-            <div>
-              <a href="#">
-                <img src={logo} width={90} alt="logo" className="m-2" />
-              </a>
-            </div>
+            <a href="/">
+              <h2 className="font-bold p-2 space antialiased tracking-widest">
+                {PROFILE.name}
+              </h2>
+            </a>
             <div className="flex items-center">
               <button
                 className="focus:outline-none lg:hidden" // Corrected class

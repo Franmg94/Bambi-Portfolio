@@ -21,12 +21,15 @@ const itemVariants = {
 
 const Projects = () => {
   return (
-    <section id="projects" className="relative py-10 bg-fuchsia-700">
+    <section
+      id="projects"
+      className="relative py-10  bg-gradient-to-b from-black to-fuchsia-700"
+    >
       {/* Solid background color */}
       {/* Top Gradient from Black to Fuchsia */}
-      <div className="absolute top-0 left-0 right-0 h-10 bg-gradient-to-b from-black to-fuchsia-700"></div>
+      {/* <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-black to-fuchsia-700"></div> */}
       {/* Bottom Gradient from Fuchsia to Black */}
-      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-fuchsia-700 to-fuchsia-900"></div>
+      {/* <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-fuchsia-700 to-fuchsia-900"></div> */}
       <motion.h2
         initial="hidden"
         whileInView="visible"
@@ -35,6 +38,17 @@ const Projects = () => {
       >
         Festivals I have worked with
       </motion.h2>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/KbOz2E-Lgqs"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
       <motion.div
         initial="hidden"
         whileInView="visible"

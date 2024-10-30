@@ -13,9 +13,8 @@
   @apply mt-20  text-center  text-6xl font-semibold text-white relative z-10 font-flux;
 }
 
-/* Additional custom classes */
 .button-primary {
-  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded; /* Define a button style */
+  @apply border border-fuchsia-800 font-semibold tracking-wide bg-fuchsia-700 rounded-lg px-6 py-2  transition-transform transform hover:scale-105 hover:-translate-y-1 hover:bg-fuchsia-800 shadow-md;
 }
 
 .card {
@@ -31,4 +30,8 @@
 }
 .underline-2 {
   @apply mb-10 h-3 w-12 bg-fuchsia-400;
+}
+
+.input-form {
+  @apply mb-8 w-full rounded-lg border border-gray-300 bg-transparent px-3 py-2 text-sm focus:border-gray-400 focus:outline-none;
 }

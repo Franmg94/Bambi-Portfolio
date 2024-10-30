@@ -73,7 +73,7 @@ const ContactForm = () => {
 
   return (
     <div
-      // className=" p-5 bg-gradient-to-t from-transparent from-60% to-fuchsia-700 lg:from-30%"
+      className=" p-5 bg-gradient-to-t from-transparent from-10% to-fuchsia-700 lg:from-30%"
       id="contact"
     >
       <Toaster />
@@ -93,7 +93,7 @@ const ContactForm = () => {
             value={formData.name}
             placeholder="Name"
             onChange={handleChange}
-            className="mb-8 w-full appearence-none rounded-lg border border-gray-900 bg-transparent px-3 py-2 text-sm focus:border-gray- 400 focus:outline-none"
+            className="input-form"
           />
           {errors.name && (
             <p className="text-sm text-pink-700">´{errors.name}</p>
@@ -108,7 +108,7 @@ const ContactForm = () => {
             value={formData.email}
             placeholder="Email"
             onChange={handleChange}
-            className="mb-8 w-full appearence-none rounded-lg border border-gray-900 bg-transparent px-3 py-2 text-sm focus:border-gray- 400 focus:outline-none"
+            className="input-form"
           />
           {errors.email && (
             <motion.p
@@ -129,7 +129,7 @@ const ContactForm = () => {
             value={formData.message}
             placeholder="Message"
             onChange={handleChange}
-            className="mb-8 w-full appearence-none rounded-lg border border-gray-900 bg-transparent px-3 py-2 text-sm focus:border-gray- 400 focus:outline-none"
+            className="input-form"
             rows="4"
           />
           {errors.message && (
@@ -146,7 +146,7 @@ const ContactForm = () => {
 
         <button
           type="submit"
-          className={`mb-8 w-full rounded bg-fuchsia-400 px-4 py-2 text-sm font-semibold text-slate-950 hover:bg-yellow-500 ${
+          className={`mb-8 w-full rounded bg-fuchsia-400 px-4 py-2 text-sm font-semibold text-slate-950 hover:bg-fuchsia-600 ${
             isSending ? "cursor-not-allowed opacity-50" : ""
           }`}
           disabled={isSending}

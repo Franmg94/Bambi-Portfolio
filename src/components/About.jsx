@@ -23,7 +23,7 @@ const About = () => {
 
       <div className="flex justify-center mt-10">
         <a href="../assets/CV-CEREN KALAY.pdf" download="CV-CEREN KALAY.pdf">
-          <button className="border border-black px-6 py-2">Download CV</button>
+          <button className="button-primary ">Download CV</button>
         </a>
       </div>
     </div>
